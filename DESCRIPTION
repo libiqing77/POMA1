@@ -1,0 +1,46 @@
+Package: POMA
+Title: Tools for Omics Data Analysis
+Version: 1.8.0
+Authors@R: 
+    c(person(given = "Pol",
+             family = "Castellano-Escuder",
+             role = c("aut", "cre"),
+             email = "polcaes@gmail.com",
+             comment = c(ORCID = "0000-0001-6466-877X"))
+             )
+Description: 
+    A reproducible and easy-to-use toolkit for visualization, pre-processing, exploration, 
+    and statistical analysis of omics datasets. The main aim of POMA is to enable a flexible data cleaning and 
+    statistical analysis processes in one comprehensible and user-friendly R package. This package has a Shiny app 
+    version called POMAShiny that implements all POMA functions. See https://github.com/pcastellanoescuder/POMAShiny. 
+    See Castellano-Escuder P, González-Domínguez R, Carmona-Pontaque F, et al. (2021) <doi:10.1371/journal.pcbi.1009148> 
+    for more details.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+biocViews: BatchEffect, Classification, Clustering, DecisionTree,
+        DimensionReduction, MultidimensionalScaling, Normalization,
+        Preprocessing, PrincipalComponent, Regression, RNASeq,
+        Software, StatisticalMethod, Visualization
+Imports: broom, caret, ComplexHeatmap, dbscan, dplyr, DESeq2, ggplot2,
+        ggrepel, glasso (>= 1.11), glmnet, impute, limma, magrittr,
+        mixOmics, randomForest, RankProd (>= 3.14), rmarkdown,
+        SummarizedExperiment, tibble, tidyr, uwot, vegan
+Suggests: BiocStyle, covr, ggraph, knitr, patchwork, plotly, tidyverse,
+        testthat (>= 2.3.2)
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Depends: R (>= 4.0)
+VignetteBuilder: knitr
+URL: https://github.com/pcastellanoescuder/POMA
+BugReports: https://github.com/pcastellanoescuder/POMA/issues
+git_url: https://git.bioconductor.org/packages/POMA
+git_branch: RELEASE_3_16
+git_last_commit: 3a1c9c6
+git_last_commit_date: 2022-11-01
+Date/Publication: 2022-11-01
+NeedsCompilation: no
+Packaged: 2022-11-01 22:30:26 UTC; biocbuild
+Author: Pol Castellano-Escuder [aut, cre]
+    (<https://orcid.org/0000-0001-6466-877X>)
+Maintainer: Pol Castellano-Escuder <polcaes@gmail.com>
