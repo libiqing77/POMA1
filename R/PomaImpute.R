@@ -130,7 +130,7 @@ PomaImpute <- function(data,
   target <- SummarizedExperiment::colData(data) %>% 
     as.data.frame() %>%
     tibble::rownames_to_column()
-  dataImputed <- PomaSummarizedExperiment(features = depurdata, target = target)
+  dataImputed <- PomaMSnSetClass(features = depurdata, target = target)
     
   if (validObject(dataImputed))
     return(dataImputed)
